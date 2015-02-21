@@ -7,7 +7,7 @@
 
 ##INPUT
 
-The programs feeds from files on working directory and some subdirectories. This files are supplied from the CodeBook.md file clicking on aproppiate link at input section but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
+The programs feeds from files on working directory and some subdirectories. __This files are supplied from the CodeBook.md file clicking on aproppiate link at input section__ but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
 
 Working Directory Should contain before runnig:
 
