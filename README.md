@@ -1,16 +1,18 @@
 >#Tidy data preparation
-*__Version:__ 1.0
-*__Auth:__ Carlos Valls Hernandez 
-*__Pourpose:__ Fit Getting and Cleaning Data course project requirements
-*__Email:__ cvalls666@hotmail.com
+>
+* __Version:__ 1.0
+* __Auth:__ Carlos Valls Hernandez 
+* __Purpose:__ Fit Getting and Cleaning Data course project requirements
+* __Email:__ cvalls666@hotmail.com
 
 >##INPUT
->>The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
+
+The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
 
 >>Working Directory contains:
-	* Features.txt		List of all features.Used for setting column names
-	* Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
-	* Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
+	- Features.txt		List of all features.Used for setting column names
+	- Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
+	- Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
 	* Train is a subdirector withy Training data
 		Contains:
 			y_train.txt    		- Training labels.
@@ -32,8 +34,7 @@ Other files contained on the directory are not used by the program
 	- Second is Subject id
 	- Rest of columns are variables selected from those variables wiht mean or std in original 					files
 	- Those cols are computed by the program
-
-4. The file Contains headers
+4. Columns Contains headers
 5. Separator is a \t character. It is easy to read.
 
 
