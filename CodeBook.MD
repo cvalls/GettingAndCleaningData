@@ -35,9 +35,9 @@ The following files are available for the train and test data. Their description
 
 ## Project Files
 There are three project files
-CodeBook.md: This document
-Readme.md: Describes the proces.
-run_analysis.R: Program file.
+*CodeBook.md: This document
+*Readme.md: Describes the proces.
+*run_analysis.R: Program file.
 
 
 ## Output data
