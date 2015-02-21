@@ -1,12 +1,12 @@
 #Tidy data preparation
->
+
 * __Version:__ 1.0
 * __Auth:__ Carlos Valls Hernandez 
 * __Purpose:__ Fit Getting and Cleaning Data course project requirements
 * __Email:__ cvalls666@hotmail.com
 
 ##INPUT
->
+
 The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
 
 Working Directory contains:
