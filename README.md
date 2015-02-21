@@ -10,6 +10,7 @@
 The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
 
 >Working Directory contains:
+
 	* Features.txt		List of all features.Used for setting column names
 	* Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
 	- Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
