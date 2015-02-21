@@ -10,7 +10,7 @@
 The programs feeds from files on working directory and some subdirectories. __This files are supplied from the CodeBook.md file clicking on aproppiate link at input section__ but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
 
 Working Directory Should contain before runnig:
-
+* run_analysis.R	Of course, the program file
 * Features.txt		List of all features.Used for setting column names
 * Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
 * Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
