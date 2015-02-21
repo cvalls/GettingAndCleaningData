@@ -33,6 +33,13 @@ The following files are available for the train and test data. Their description
 * 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
 * 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
+## Project Files
+There are three project files
+CodeBook.md: This document
+Readme.md: Describes the proces.
+run_analysis.R: Program file.
+
+
 ## Output data
 Output data is stored in file :  tidyDataSet.txt
 
