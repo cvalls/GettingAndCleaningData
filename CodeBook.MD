@@ -3,8 +3,9 @@ This is a code book that describes the variables, data, transformations for the 
 
 ## The data source
 
-Original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-Original description of the dataset: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+*Original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+*Original description of the dataset: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ### Data Source Set Information
 
@@ -31,8 +32,9 @@ The following files are available for the train and test data. Their description
 *'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
 ## The Output data
-Output data is stored in file : XXXXXXXXXXXXXXX
+Output data is stored in file :  tidyDataSet.txt
 
+It is Tidy because 
 *Every line is an observation.
 *Every variable is in a column
 *Observation is calculated grouping mean variables from origin data by Activity and Subject (in this order). 
