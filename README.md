@@ -46,7 +46,7 @@ The programs feeds from files on working directory and some subdirectories. This
 4. A Automatict test has been included for let checking results. Output is the file of course, but a View of that file too, with appropiate names
 5. It produces a Tidy data set in the short form.
 
-###Algorithm
+###Algorithm:
 1. Read The features.txt file for obtaining the var names so it will be col names-
 2. Read the data from training set (train directory), and set its appropiate column names, including an ActivityIndex and Subject Column Name
 3. Read the data from test set (test directory), and set  its appropiate column names, including an ActivityIndex and Subject Column Name
