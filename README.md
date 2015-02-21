@@ -1,24 +1,21 @@
 >#Tidy data preparation
-## Version 1.0
-## Auth: Carlos Valls Hernandez 
-## Pourpose: Fit Getting and Cleaning Data course project requirements
-## Email: cvalls666@hotmail.com
-
->## GettingAndCleaningData Project
-Files for submmit the project of the course
+__Version:__ 1.0
+__Auth:__ Carlos Valls Hernandez 
+__Pourpose:__ Fit Getting and Cleaning Data course project requirements
+__Email:__ cvalls666@hotmail.com
 
 >##INPUT
-The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program run
->Working Directory contains
-	- Features.txt		List of all features.Used for setting column names
-	- Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
-	- Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
-	Train is a subdirector withy Training data
+>>The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
+>>Working Directory contains:
+	* Features.txt		List of all features.Used for setting column names
+	* Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
+	* Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
+	* Train is a subdirector withy Training data
 		Contains:
 			y_train.txt    		- Training labels.
 			x_train.txt		- Contains common Features for working
 			subject_train.txt	- Contains Subject Data.  Each row identifies the subject who performed the 							activity for each window sample. Its range is from 1 to 30. 
-	Test is a subdirector with Test data
+	* Test is a subdirector with Test data
 		Contains
 			y_test.txt		- Test labels.
 			x_test.txt		- Contains common Features for working
