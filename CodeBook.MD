@@ -1,7 +1,7 @@
 #CodeBook
 This is a code book that describes the variables, data, transformations for the getting and cleaning course
 
-## The data source
+## INPUT Data
 
 *Original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -13,49 +13,54 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-## The Source data
+### Input files
 
 The dataset includes the following files:
-*'README.txt'
-*'features_info.txt': Shows information about the variables used on the feature vector.
-*'features.txt': List of all features.
-*'activity_labels.txt': Links the class labels with their activity name.
-*'train/X_train.txt': Training set.
-*'train/y_train.txt': Training labels.
-*'test/X_test.txt': Test set.
-*'test/y_test.txt': Test labels.
+
+* 'README.txt'
+* 'features_info.txt': Shows information about the variables used on the feature vector.
+* 'features.txt': List of all features.
+* 'activity_labels.txt': Links the class labels with their activity name.
+* 'train/X_train.txt': Training set.
+* 'train/y_train.txt': Training labels.
+* 'test/X_test.txt': Test set.
+* 'test/y_test.txt': Test labels.
 
 The following files are available for the train and test data. Their descriptions are equivalent.
-*'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-*'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
-*'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
-*'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
 
-## The Output data
+* 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+* 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis.
+* 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+* 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second.
+
+## Output data
 Output data is stored in file :  tidyDataSet.txt
 
 It is Tidy because 
-*Every line is an observation.
-*Every variable is in a column
-*Observation is calculated grouping mean variables from origin data by Activity and Subject (in this order). 
-*Every line has observations from several variables which are described in features_info.txt.
-*Correspondence between original and new variables is below.
+ * Every line is an observation.
+ * Every variable is in a column
+ * Observation is calculated grouping mean variables from origin data by Activity and Subject (in this order). 
+ * Every line has observations from several variables which are described in features_info.txt.
+ * Correspondence between original and new variables is below.
 
-### Considerations
-*This files has /t as separator. 
-*Column names are based on Source file features.txt. 
-*Each column different than activity and subject is a mean group by Activity Name Source column of the Corresponding variable on features.txt. 
-*Names on columns do reflect this fact with the  Mean prefix.
-*Var names has descriptive names 
-	** Time as Time Domain Still Remains at the begining of the variable name
-	** Fourier as FFT (Frecuency Domain) Still Remains at the begining of the variable name
-	** Every "-" character have on original variable names have been removed
-	** Every "(" and ")" characteres have on original variable names have been removed
-	** Camel case has been implemented
-	** Units in every variable remains the same from the raw data
-* Due it is consider a new group of variables and observations, a GrpByActSubMean Suffix have been added
-	
+Considerations about Output file
+* This files has /t as separator. 
+* Column names are based on Source file features.txt. 
+* Each column different than activity and subject is a mean group by Activity Name Source column of the Corresponding variable on features.txt. 
+* Names on columns do reflect this fact with the  Mean prefix.
+
+Considerations abour variable Names
+* Every variable but (Scope and Activities related) starts by Mean. It implies Mean is computed by the program groupin every single variable by activity and subject an taken a mean() of those groups. It has been an easy way to give a descriptive name to them.
+* Time as Time Domain  is a Prefix when it is appropiate
+* Fourier as FFT (Frecuency Domain) is a Prefix when it is appropiate
+* Every "-" character have on original variable names have been removed
+* Every "(" and ")" characteres have on original variable names have been removed
+* Camel Case has been implemented
+* Units in every variable remains the same from the raw data
+
 ###Variable Names List
+This is a complete list of variables in the output. Meaning of the original variable can be found in features_info.txt
+
 * Subject:	An identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30.           
 * ActivityIndex: An activity Index of Activity : 1 - WALKING, 2 - WALKING_UPSTAIRS, 3 - WALKING_DOWNSTAIRS, 4 - SITTING, 5 - STANDING, 6 - LAYING
 * ActivityName: An activity string with the description of Activity : WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
