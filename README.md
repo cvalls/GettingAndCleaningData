@@ -1,15 +1,13 @@
 >#Tidy data preparation
-======================================
 ## Version 1.0
 ## Auth: Carlos Valls Hernandez 
-## Pourpouse: Fit Getting and Cleaning Data course project requirements
+## Pourpose: Fit Getting and Cleaning Data course project requirements
 ## Email: cvalls666@hotmail.com
 
 >## GettingAndCleaningData Project
 Files for submmit the project of the course
 
 >##INPUT
-======================================
 The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program run
 >Working Directory contains
 	- Features.txt		List of all features.Used for setting column names
@@ -28,8 +26,7 @@ The programs feeds from files on working directory and some subdirectories. This
 Other files contained on the directory are not used by the program
 	
 
-##OUTPUT
-======================================
+>##OUTPUT
 1. Output is a file in txt format called "tidyDataSet.txt"
 2. Old file will be deleted and a new file with the same name will be created when the program run
 3. Contains 81 columns:
@@ -42,16 +39,15 @@ Other files contained on the directory are not used by the program
 5. Separator is a \t character. It is easy to read.
 
 
-##PROCESS
-======================================
->###Notes:
+>##PROCESS
+>>###Notes:
 1. There are several functiomns define in order to structure the code.
 2. Variables use camecase an are descriptive.
 3. There is a lot of comments. 
 4. A Automatict test has been included for let checking results. Output is the file of course, but a View of that file too, with appropiate names
 5. It produces a Tidy data set in the short form.
 
->###Algorithm
+>>###Algorithm
 1. Read The features.txt file for obtaining the var names so it will be col names-
 2. Read the data from training set (train directory), and set its appropiate column names, including an ActivityIndex and Subject Column Name
 3. Read the data from test set (test directory), and set  its appropiate column names, including an ActivityIndex and Subject Column Name
@@ -81,7 +77,6 @@ Other files contained on the directory are not used by the program
 10. Write the tidy data set as a new file tidyDataSet.txt
 11. Reads the file and present a table on screen with the overall result set
 
-##License:
-======================================
+>##License:
 Use of this program its free for everybody who want to learn and fount it usefull
 Carlos A. Valls Hernández 19/02/2015
