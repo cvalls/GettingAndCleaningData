@@ -1,18 +1,20 @@
-#Tidy data preparation
-#Version 1.0
+>#Tidy data preparation
+======================================
+## Version 1.0
+## Auth: Carlos Valls Hernandez 
+## Pourpouse: Fit Getting and Cleaning Data course project requirements
+## Email: cvalls666@hotmail.com
 
-#Carlos Valls Hernandez for Getting and Cleaning Data course project
-#cvalls666@hotmail.com
-
-## GettingAndCleaningData Project
+>## GettingAndCleaningData Project
 Files for submmit the project of the course
 
-##INPUT
+>##INPUT
+======================================
 The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program run
-	Working Directory contains
-		features.txt			- List of all features.Used for setting column names
-		features_info.txt describes all features. Usefull for know variables but not for computing
-		activity_labels.txt		- Contains Description of indexed activities from y_train.txt and y_test.txt 						files
+>Working Directory contains
+	- Features.txt		List of all features.Used for setting column names
+	- Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
+	- Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
 	Train is a subdirector withy Training data
 		Contains:
 			y_train.txt    		- Training labels.
@@ -25,21 +27,21 @@ The programs feeds from files on working directory and some subdirectories. This
 			subject_test.txt	- Contains Subject Data.  Each row identifies the subject who performed the 				activity for each window sample. Its range is from 1 to 30. 
 Other files contained on the directory are not used by the program
 	
-======================================
 
 ##OUTPUT
+======================================
 1. Output is a file in txt format called "tidyDataSet.txt"
 2. Old file will be deleted and a new file with the same name will be created when the program run
 3. Contains 81 columns:
-		- First is index name 
-		- Second is Subject id
-		- Rest of columns are variables selected from those variables wiht mean or std in original 					files
-		- Those cols are computed by the program
+	- First is index name 
+	- Second is Subject id
+	- Rest of columns are variables selected from those variables wiht mean or std in original 					files
+	- Those cols are computed by the program
 
 4. The file Contains headers
 5. Separator is a \t character. It is easy to read.
 
-======================================
+
 ##PROCESS
 ======================================
 >###Notes:
@@ -80,6 +82,6 @@ Other files contained on the directory are not used by the program
 11. Reads the file and present a table on screen with the overall result set
 
 ##License:
-========
+======================================
 Use of this program its free for everybody who want to learn and fount it usefull
 Carlos A. Valls Hernández 19/02/2015
