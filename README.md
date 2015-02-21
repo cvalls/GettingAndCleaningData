@@ -1,14 +1,11 @@
-#==================================================================
 #Tidy data preparation
 #Version 1.0
-#==================================================================
+
 #Carlos Valls Hernandez for Getting and Cleaning Data course project
 #cvalls666@hotmail.com
-#==================================================================
 
 ## GettingAndCleaningData Project
 Files for submmit the project of the course
-
 
 ##INPUT
 The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program run
@@ -21,13 +18,11 @@ The programs feeds from files on working directory and some subdirectories. This
 			y_train.txt    		- Training labels.
 			x_train.txt		- Contains common Features for working
 			subject_train.txt	- Contains Subject Data.  Each row identifies the subject who performed the 							activity for each window sample. Its range is from 1 to 30. 
-
 	Test is a subdirector with Test data
 		Contains
 			y_test.txt		- Test labels.
 			x_test.txt		- Contains common Features for working
 			subject_test.txt	- Contains Subject Data.  Each row identifies the subject who performed the 				activity for each window sample. Its range is from 1 to 30. 
-
 Other files contained on the directory are not used by the program
 	
 ======================================
@@ -47,13 +42,14 @@ Other files contained on the directory are not used by the program
 ======================================
 ##PROCESS
 ======================================
-###Notes:
+>###Notes:
 1. There are several functiomns define in order to structure the code.
 2. Variables use camecase an are descriptive.
 3. There is a lot of comments. 
 4. A Automatict test has been included for let checking results. Output is the file of course, but a View of that file too, with appropiate names
 5. It produces a Tidy data set in the short form.
-###Algorithm
+
+>###Algorithm
 1. Read The features.txt file for obtaining the var names so it will be col names-
 2. Read the data from training set (train directory), and set its appropiate column names, including an ActivityIndex and Subject Column Name
 3. Read the data from test set (test directory), and set  its appropiate column names, including an ActivityIndex and Subject Column Name
