@@ -1,60 +1,59 @@
-==================================================================
-Tidy data preparation
-Version 1.0
-==================================================================
-Carlos Valls Hernandez for Getting and Cleaning Data course project
-cvalls666@hotmail.com
-==================================================================
+#==================================================================
+#Tidy data preparation
+#Version 1.0
+#==================================================================
+#Carlos Valls Hernandez for Getting and Cleaning Data course project
+#cvalls666@hotmail.com
+#==================================================================
 
-# GettingAndCleaningData Project
+## GettingAndCleaningData Project
 Files for submmit the project of the course
 
 
-#INPUT
-The programs feeds from files on working directory and some subdirectories.
-
-	Train is a subdirector with Training data
+##INPUT
+The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program run
+	Working Directory contains
+		features.txt			- List of all features.Used for setting column names
+		features_info.txt describes all features. Usefull for know variables but not for computing
+		activity_labels.txt		- Contains Description of indexed activities from y_train.txt and y_test.txt 						files
+	Train is a subdirector withy Training data
 		Contains:
 			y_train.txt    		- Training labels.
 			x_train.txt		- Contains common Features for working
-			subject_train.txt	- Contains Subject Data.  Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+			subject_train.txt	- Contains Subject Data.  Each row identifies the subject who performed the 							activity for each window sample. Its range is from 1 to 30. 
 
 	Test is a subdirector with Test data
 		Contains
 			y_test.txt		- Test labels.
 			x_test.txt		- Contains common Features for working
-			subject_test.txt	- Contains Subject Data.  Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-
-	Working Directory contains
-		features.txt			- List of all features.Used for setting column names
-
-		activity_labels.txt		- Contains Description of indexed activities from y_train.txt and y_test.txt files
+			subject_test.txt	- Contains Subject Data.  Each row identifies the subject who performed the 				activity for each window sample. Its range is from 1 to 30. 
 
 Other files contained on the directory are not used by the program
-	features_info.txt describes all features. Usefull for know variables but not for computing
 	
 ======================================
 
-#OUTPUT
-Output is a file in txt format. 
-	Contains 81 columns 	first is index name 
-				second is Subject id
-				rest of columns are variables selected from those variables wiht mean or std in original files
-						Those cols are computed by the program
+##OUTPUT
+1. Output is a file in txt format called "tidyDataSet.txt"
+2. Old file will be deleted and a new file with the same name will be created when the program run
+3. Contains 81 columns:
+		- First is index name 
+		- Second is Subject id
+		- Rest of columns are variables selected from those variables wiht mean or std in original 					files
+		- Those cols are computed by the program
 
-	The file Contains headers
-	Separator is a \t character.
+4. The file Contains headers
+5. Separator is a \t character. It is easy to read.
 
 ======================================
-#PROCESS
+##PROCESS
 ======================================
-Notes:
+###Notes:
 1. There are several functiomns define in order to structure the code.
 2. Variables use camecase an are descriptive.
 3. There is a lot of comments. 
 4. A Automatict test has been included for let checking results. Output is the file of course, but a View of that file too, with appropiate names
 5. It produces a Tidy data set in the short form.
-
+###Algorithm
 1. Read The features.txt file for obtaining the var names so it will be col names-
 2. Read the data from training set (train directory), and set its appropiate column names, including an ActivityIndex and Subject Column Name
 3. Read the data from test set (test directory), and set  its appropiate column names, including an ActivityIndex and Subject Column Name
@@ -84,7 +83,7 @@ Notes:
 10. Write the tidy data set as a new file tidyDataSet.txt
 11. Reads the file and present a table on screen with the overall result set
 
-#License:
+##License:
 ========
 Use of this program its free for everybody who want to learn and fount it usefull
 Carlos A. Valls Hernández 19/02/2015
