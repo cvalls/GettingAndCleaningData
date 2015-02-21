@@ -9,19 +9,19 @@
 >
 The programs feeds from files on working directory and some subdirectories. This files are supplied but they are not included as necesary for the project . Every files should be stored in the working directory when the program runs
 
->Working Directory contains:
+Working Directory contains:
 
 * Features.txt		List of all features.Used for setting column names
 * Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
 * Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
-	- Train is a subdirector withy Training data. It Contains
-		-- y_train.txt  	 Training labels.
-		-- x_train.txt		 Contains common Features for working
-		-- subject_train.txt	 Contains Subject Data.  Each row identifies the subject who performed the 							 activity for each window sample. Its range is from 1 to 30. 
-	- Test is a subdirector with Test data. It Contains
-		-- y_test.txt		 Test labels.
-		-- x_test.txt		 Contains common Features for working
-		-- subject_test.txt	 Contains Subject Data.  Each row identifies the subject who performed the 							activity for each window sample. Its range is from 1 to 30. 
+* Train is a subdirector withy Training data. It Contains
+  - y_train.txt  	 Training labels.
+  - x_train.txt		 Contains common Features for working
+  - subject_train.txt	 Contains Subject Data.  Each row identifies the subject who performed the 							 activity for each window sample. Its range is from 1 to 30. 
+* Test is a subdirector with Test data. It Contains
+  - y_test.txt		 Test labels.
+  - x_test.txt		 Contains common Features for working
+  - subject_test.txt	 Contains Subject Data.  Each row identifies the subject who performed the 							activity for each window sample. Its range is from 1 to 30. 
 >Other files contained on the directory are not used by the program
 	
 
