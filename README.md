@@ -11,9 +11,9 @@ The programs feeds from files on working directory and some subdirectories. This
 
 >Working Directory contains:
 
-	* Features.txt		List of all features.Used for setting column names
-	* Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
-	- Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
+* Features.txt		List of all features.Used for setting column names
+* Features_info.txt 	Describes all features. Useful for knowing variables but not for computing
+* Activity_labels.txt	Contains Description of indexed activities from y_train.txt and y_test.txt 							files
 	- Train is a subdirector withy Training data. It Contains
 		-- y_train.txt  	 Training labels.
 		-- x_train.txt		 Contains common Features for working
