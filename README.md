@@ -39,11 +39,12 @@ Working Directory Should contain before runnig:
 
 ##PROCESS
 ###Notes:
-1. There are several functiomns define in order to structure the code.
-2. Variables use camecase an are descriptive.
-3. There is a lot of comments. 
-4. A Automatict test has been included for let checking results. Output is the file of course, but a View of that file too, with appropiate names
-5. It produces a Tidy data set in the short form.
+1. Plyr library should be installed before run the program
+2. There are several functiomns define in order to structure the code.
+3. Variables use camecase an are descriptive.
+4. There is a lot of comments. 
+5. A Automatict test has been included for let checking results. Output is the file of course, but a View of that file too, with appropiate names
+6. It produces a Tidy data set in the short form.
 
 ###Algorithm:
 1. Read The features.txt file for obtaining the var names so it will be col names-
