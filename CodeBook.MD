@@ -68,9 +68,8 @@ Considerations abour variable Names
 ###Variable Names List
 This is a complete list of variables in the output. Meaning of the original variable can be found in features_info.txt
 
-* Subject:	An identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30.           
-* ActivityIndex: An activity Index of Activity : 1 - WALKING, 2 - WALKING_UPSTAIRS, 3 - WALKING_DOWNSTAIRS, 4 - SITTING, 5 - STANDING, 6 - LAYING
 * ActivityName: An activity string with the description of Activity : WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+* Subject:	An identifier of the subject who carried out the experiment (Subject). Its range is from 1 to 30.           
 * MeanTempBodyAccMeanX Search for tBodyAcc-mean()-X into 'features_info.txt' for variable description                           
 * MeanTempBodyAccMeanY Search for tBodyAcc-mean()-Y into 'features_info.txt' for variable description                           
 * MeanTempBodyAccMeanZ Search for tBodyAcc-mean()-Z into 'features_info.txt' for variable description                           
