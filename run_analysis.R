@@ -17,7 +17,7 @@
 ## Main function
 run_analysis <- function ()
 {
-	install.packages("plyr")
+	print ("Please, note that plyr package should be installed. Run install.packages (plyr)")
 	library("plyr")
 
 	## It reads files and name dataframe columns for Training Data
@@ -35,7 +35,7 @@ run_analysis <- function ()
 
 		## so it is like a single dataframe. There will be 561 plus 1 cols per 7352 columns
 		## column headers will be provided by commonFeatures.
-		trainData <- cbind(trainRowHeaders , trainSubjects, traindataFrame )
+		trainData <- cbind(trainRowHeaders , trainSubjects, trainDataFrame )
 		
 		## lets fill col names. First column is from the y_File so 
 		colnames (trainData) <- c("ActivityIndex" , "Subject", commonFeatures$V2)
@@ -100,6 +100,7 @@ run_analysis <- function ()
 	## makeup column Names on set. Basically corrects some wrong names
 	makeUpColumnNames <- function ( dataSet )
 	{
+
 		## it is a long vector with old and new names. Yes, but it was too late for gsub()
 		oldvsNewNames = c ("fBodyBodyAccJerkMag-mean()" = "fBodyAccJerkMag-mean()",
 				"fBodyBodyGyroMag-mean()" = "fBodyGyroMag-mean()",
@@ -110,7 +111,6 @@ run_analysis <- function ()
 				"fBodyBodyAccJerkMag-std()" = "fBodyAccJerkMag-std()",
 				"fBodyBodyGyroMag-std()" = "fBodyGyroMag-std()",
 				"fBodyBodyGyroJerkMag-std()" = "fBodyGyroJerkMag-std()" )
-
 		dataSet <- rename(dataSet , replace = oldvsNewNames, warn_missing = TRUE)
 		return (dataSet)
 	}
@@ -119,7 +119,9 @@ run_analysis <- function ()
 	changeColumnNames <- function (tidyDataSet)
 	{
 		## it is a long vector with old and new names. Yes, but it was too late for gsub()
-		oldvsNewNames = c( "ActivityIndex" = "ActivityIndex", "Subject" = "Subject", "ActivityName" = "ActivityName"      
+		oldvsNewNames = c( "ActivityName" = "ActivityName"
+				##,"ActivityIndex" = "ActivityIndex" 
+				,"Subject" = "Subject"
 				,"tBodyAcc-mean()-X" = "MeanTempBodyAccMeanX"
 				,"tBodyAcc-mean()-Y" = "MeanTempBodyAccMeanY"
 				,"tBodyAcc-mean()-Z" = "MeanTempBodyAccMeanZ"
@@ -240,11 +242,11 @@ run_analysis <- function ()
 	commonFeatures = read.table("features.txt", stringsAsFactors =FALSE) 
 
 	## lets read train data files, setting column names
- 	trainDataFrame <- readTrainingData(commonFeatures)
+	trainDataFrame <- readTrainingData(commonFeatures)
 	
 	## lets read train data files, setting column names
- 	testDataFrame <- readTestData(commonFeatures)
-	
+	testDataFrame <- readTestData(commonFeatures)
+
 	## allDataFrame will have 10299 rows sum of 7352 (training) and 2947 (test)
 	allDataFrame <- rbind(trainDataFrame , testDataFrame )
 
@@ -271,7 +273,12 @@ run_analysis <- function ()
 	## tapply does not run, fortunately there is a function called aggregate
 	## Note When aggregate num of rows are resumed because a grouped mean has been taken.
 	lstAgreggates <- c("ActivityName", "Subject")
-	tidyDataSet <- aggregate(meanStrDataFrame[ 3:numOfCols-1 ], 
+	
+	tidyDataSet <- data.frame()
+
+	## last col shoul not be added
+	numOfCols <- numOfCols -1
+	tidyDataSet <- aggregate(meanStrDataFrame[ 3:numOfCols ], 
 				by = meanStrDataFrame[lstAgreggates],  FUN=mean )
 
 	## Lets set a better set of variables. From the begining we have been using original names
@@ -290,13 +297,12 @@ run_analysis <- function ()
 	## Containing new calculated values. It would fit the same laws, but then observations were different and 
 	## new columns would repeat values every combination of ActivityIndex and Scope. 	
 	dumpTidyDataSet (tidyDataSet)
-	
+
 	## Column names comes from the beginning, but now they have a mean() so 
 	## it will be better to append a _main() to every column name but the first three
 
 	## Finally we can autotest
 	autotest()
-	
-	## return TidyDataSet	
-	return (tidyDataSet) 
+
+	return ("finished") 
 }
